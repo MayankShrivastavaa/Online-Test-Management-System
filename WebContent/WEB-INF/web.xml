@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>OnlineTest</display-name>
+  <welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+        <servlet-name>custRegServlet</servlet-name>
+        <servlet-class>custRegServlet</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>CourseInsert</servlet-name>
+        <servlet-class>CourseInsert</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>payInserts</servlet-name>
+        <servlet-class>payInserts</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>custRegServlet</servlet-name>
+        <url-pattern>/custRegServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>payInserts</servlet-name>
+        <url-pattern>/payInserts</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CourseInsert</servlet-name>
+        <url-pattern>/CourseInsert</url-pattern>
+    </servlet-mapping>
+</web-app>
